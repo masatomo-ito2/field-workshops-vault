@@ -25,7 +25,7 @@ layout: true
 name: vault-auth-methods
 # Vault Authentication Methods
 .center[![:scale 45%](images/vault_auth_methods.png)]
-.center[Vault‚Í‘½‚­‚ÌAuth method‚ğƒTƒ|[ƒg‚µ‚Ä‚¢‚Ü‚·B]
+.center[Vaultã¯å¤šãã®Auth methodã‚’ã‚µãƒãƒ¼ãƒˆã—ã¦ã„ã¾ã™ã€‚]
 
 ???
 * Auth methods are how your apps and users verify their identity.
@@ -73,14 +73,14 @@ name:vault-auth-methods-2
 name: enabling-auth-methods
 # Enabling Authentication Methods
 
-* Vault auth methods‚Í–¾¦“I‚É—LŒø‚É‚µ‚Ü‚·B
-	* `vault auth enable`‚Ås‚¢‚Ü‚·B
-* Šeauth method‚ÍƒfƒtƒHƒ‹ƒg‚ÌPath‚ª‚ ‚è‚Ü‚·B
-* •Ê‚ÌPath‚àİ’è‰Â”\‚Å‚·B
+* Vault auth methodsã¯æ˜ç¤ºçš„ã«æœ‰åŠ¹ã«ã—ã¾ã™ã€‚
+	* `vault auth enable`ã§è¡Œã„ã¾ã™ã€‚
+* å„auth methodã¯ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®PathãŒã‚ã‚Šã¾ã™ã€‚
+* åˆ¥ã®Pathã‚‚è¨­å®šå¯èƒ½ã§ã™ã€‚
 	* `vault auth enable -path=aws-east aws`
-* ƒJƒXƒ^ƒ€Path‚ÖCLI‚âAPI‚ÅƒAƒNƒZƒX‚µ‚Ü‚·B
-	* ƒJƒXƒ^ƒ€ƒpƒXF `vault write aws-east/config/root`
-	* ƒfƒtƒHƒ‹ƒgF `vault write aws/config/root`
+* ã‚«ã‚¹ã‚¿ãƒ Pathã¸CLIã‚„APIã§ã‚¢ã‚¯ã‚»ã‚¹ã—ã¾ã™ã€‚
+	* ã‚«ã‚¹ã‚¿ãƒ ãƒ‘ã‚¹ï¼š `vault write aws-east/config/root`
+	* ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆï¼š `vault write aws/config/root`
 
 ???
 
@@ -92,7 +92,7 @@ name: enabling-auth-methods
 name: userpass-0
 # Vault's Userpass Auth Method
 .center[![:scale 30%](images/userpass_login.png)]
-* Userpass ƒƒ\ƒbƒh‚ÍAVault ‚ªŠÇ—‚·‚éƒ†[ƒU[–¼‚ÆƒpƒXƒ[ƒh‚Åƒ†[ƒU[‚ğ”FØ‚µ‚Ü‚·B
+* Userpass ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã€Vault ãŒç®¡ç†ã™ã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼åã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã§ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’èªè¨¼ã—ã¾ã™ã€‚
 
 ???
 * The Userpass method allows users to authenticate with username and password managed by Vault.
@@ -117,9 +117,9 @@ name: lab-vault-basics-challenge-6
 ---
 name: chapter-5-review-questions
 # Chapter 5 Review
-* Vault ‚Å‚ÍA‚Ç‚Ì‚æ‚¤‚Èí—Ş‚ÌƒGƒ“ƒeƒBƒeƒB‚ğ”FØ‚Å‚«‚Ü‚·‚©H
-* Userpass ”FØ•û–@‚Ì‘Šiî•ñ‚ÍA‚Ç‚Ì‚æ‚¤‚ÈƒVƒXƒeƒ€‚ÅŠÇ—‚³‚ê‚Ä‚¢‚Ü‚·‚©H
-* ƒfƒtƒHƒ‹ƒg‚Ìƒ|ƒŠƒV[ˆÈŠO‚Ìƒ|ƒŠƒV[‚ªŠ„‚è“–‚Ä‚ç‚ê‚Ä‚¢‚È‚¢ƒ†[ƒU[‚ÍAƒV[ƒNƒŒƒbƒg‚ÉƒAƒNƒZƒX‚Å‚«‚Ü‚·‚©H
+* Vault ã§ã¯ã€ã©ã®ã‚ˆã†ãªç¨®é¡ã®ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã‚’èªè¨¼ã§ãã¾ã™ã‹ï¼Ÿ
+* Userpass èªè¨¼æ–¹æ³•ã®è³‡æ ¼æƒ…å ±ã¯ã€ã©ã®ã‚ˆã†ãªã‚·ã‚¹ãƒ†ãƒ ã§ç®¡ç†ã•ã‚Œã¦ã„ã¾ã™ã‹ï¼Ÿ
+* ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ãƒãƒªã‚·ãƒ¼ä»¥å¤–ã®ãƒãƒªã‚·ãƒ¼ãŒå‰²ã‚Šå½“ã¦ã‚‰ã‚Œã¦ã„ãªã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€ã‚·ãƒ¼ã‚¯ãƒ¬ãƒƒãƒˆã«ã‚¢ã‚¯ã‚»ã‚¹ã§ãã¾ã™ã‹ï¼Ÿ
 
 
 ???
@@ -129,12 +129,12 @@ name: chapter-5-review-questions
 name: chapter-5-review-answers
 # Chapter 5 Review
 
-* Vault ‚ÍA‚Ç‚Ì‚æ‚¤‚Èí—Ş‚ÌƒGƒ“ƒeƒBƒeƒB‚ğ”FØ‚Å‚«‚Ü‚·‚©H
-  * ƒ†[ƒU[‚¨‚æ‚ÑƒAƒvƒŠƒP[ƒVƒ‡ƒ“
-* Userpass auth ƒƒ\ƒbƒh‚Ì”FØî•ñ‚ğŠÇ—‚·‚éƒVƒXƒeƒ€‚Í‰½‚Å‚·‚©?
+* Vault ã¯ã€ã©ã®ã‚ˆã†ãªç¨®é¡ã®ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã‚’èªè¨¼ã§ãã¾ã™ã‹ï¼Ÿ
+  * ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŠã‚ˆã³ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³
+* Userpass auth ãƒ¡ã‚½ãƒƒãƒ‰ã®èªè¨¼æƒ…å ±ã‚’ç®¡ç†ã™ã‚‹ã‚·ã‚¹ãƒ†ãƒ ã¯ä½•ã§ã™ã‹?
   * Vault
-* ƒfƒtƒHƒ‹ƒgƒ|ƒŠƒV[ˆÈŠO‚Ìƒ|ƒŠƒV[‚ªŠ„‚è“–‚Ä‚ç‚ê‚Ä‚¢‚È‚¢ƒ†[ƒU[‚ÍAƒV[ƒNƒŒƒbƒg‚ÉƒAƒNƒZƒX‚Å‚«‚Ü‚·‚©?
-  * ‚¢‚¢‚¦
+* ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒãƒªã‚·ãƒ¼ä»¥å¤–ã®ãƒãƒªã‚·ãƒ¼ãŒå‰²ã‚Šå½“ã¦ã‚‰ã‚Œã¦ã„ãªã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€ã‚·ãƒ¼ã‚¯ãƒ¬ãƒƒãƒˆã«ã‚¢ã‚¯ã‚»ã‚¹ã§ãã¾ã™ã‹?
+  * ã„ã„ãˆ
 
 
 ???
