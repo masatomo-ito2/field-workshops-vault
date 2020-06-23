@@ -16,7 +16,7 @@ count: false
 layout: true
 
 .footer[
-- Copyright 諱ッ 2019 HashiCorp
+- Copyright 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 

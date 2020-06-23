@@ -16,7 +16,7 @@ Chapter 3 focuses on running a production Vault server
 layout: true
 
 .footer[
-- Copyright ツゥ 2019 HashiCorp
+- Copyright 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
