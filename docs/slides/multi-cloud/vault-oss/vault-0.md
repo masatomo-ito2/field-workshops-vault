@@ -5,6 +5,7 @@ count: false
 
 # Vault OSS Workshop
 ## Modern Security with Vault for any Cloud
+## 全てのクラウドへ向けたモダンセキュリティ
 
 ![:scale 15%](https://hashicorp.github.io/field-workshops-assets/assets/logos/logo_vault.png)
 
@@ -37,8 +38,8 @@ The link to this slide deck
 name: Introductions
 # Introductions
 
-* Your Name
-* Job Title
+* Masatomo Ito
+* Sr. Solution Engineer
 * Secrets Management Experience
 * Favorite Text Editor
 
@@ -66,9 +67,9 @@ The table of contents for the workshop
 ---
 name: instruqt-tracks
 # Lab Environment Used
-* This workshop uses [Instruqt](https://instruqt.com) for hands-on labs.
-* Instruqt labs are run in "tracks" that are divided into "challenges".
-* This workshop uses the following tracks:
+* このワークショップでは[Instruqt](https://instruqt.com)でハンズオン作業をしていただきます。
+* Instruqtではいくつかのトラックでチャレンジをこなしていっただきます。
+* このワークショップでは以下のトラックを使用します。
     1. [Vault Basics](https://play.instruqt.com/hashicorp/invite/qfwncq62zsxu)
     1. [Vault Dynamic Database Credentials](https://play.instruqt.com/hashicorp/invite/sryhqfdm6sgx)
     1. [Vault Encryption as a Service](https://play.instruqt.com/hashicorp/invite/qleasfx1dszc)
