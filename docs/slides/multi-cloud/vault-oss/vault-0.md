@@ -5,7 +5,7 @@ count: false
 
 # Vault OSS Workshop
 ## Modern Security with Vault for any Cloud
-## 全てのクラウドへ向けたモダンセキュリティ
+### 全てのクラウドへ向けたモダンセキュリティ
 
 ![:scale 15%](https://hashicorp.github.io/field-workshops-assets/assets/logos/logo_vault.png)
 
@@ -18,14 +18,14 @@ It is cloud agnostic.
 layout: true
 
 .footer[
-- Copyright ツゥ 2019 HashiCorp
+- Copyright 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
 ---
 name: Link-to-Slide-Deck
 # The Slide Deck
-<br><br>
+
 ### Follow along on your own computer at this link:
 
 https://hashicorp.github.io/field-workshops-vault/slides/multi-cloud/vault-oss/index.html
@@ -41,7 +41,9 @@ name: Introductions
 * Masatomo Ito
 * Sr. Solution Engineer
 * Secrets Management Experience
+	* Vault
 * Favorite Text Editor
+	* vi
 
 ???
 * Use this slide to introduce yourself, give a little bit of your background story, then go around the room and have all your participants introduce themselves.
