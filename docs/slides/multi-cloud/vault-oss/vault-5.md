@@ -17,7 +17,7 @@ count: false
 layout: true
 
 .footer[
-- Copyright æ¯ 2019 HashiCorp
+- Copyright 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
@@ -25,7 +25,7 @@ layout: true
 name: vault-auth-methods
 # Vault Authentication Methods
 .center[![:scale 45%](images/vault_auth_methods.png)]
-.center[Vault supports many different authentication methods.]
+.center[Vault‚Í‘½‚­‚ÌAuth method‚ğƒTƒ|[ƒg‚µ‚Ä‚¢‚Ü‚·B]
 
 ???
 * Auth methods are how your apps and users verify their identity.
@@ -73,14 +73,14 @@ name:vault-auth-methods-2
 name: enabling-auth-methods
 # Enabling Authentication Methods
 
-* Most Vault auth methods need to be explicitly enabled.
-* This is done with the `vault auth enable` command.
-* Each auth method has a default path.
-* Alternate paths can be specified to enable multiple instances:<br> `vault auth enable -path=aws-east aws`
-* Custom paths must be specified in CLI commands and API calls:<br>
-`vault write aws-east/config/root`<br>
-instead of<br>
-`vault write aws/config/root`
+* Vault auth methods‚Í–¾¦“I‚É—LŒø‚É‚µ‚Ü‚·B
+	* `vault auth enable`‚Ås‚¢‚Ü‚·B
+* Šeauth method‚ÍƒfƒtƒHƒ‹ƒg‚ÌPath‚ª‚ ‚è‚Ü‚·B
+* •Ê‚ÌPath‚àİ’è‰Â”\‚Å‚·B
+	* `vault auth enable -path=aws-east aws`
+* ƒJƒXƒ^ƒ€Path‚ÖCLI‚âAPI‚ÅƒAƒNƒZƒX‚µ‚Ü‚·B
+	* ƒJƒXƒ^ƒ€ƒpƒXF `vault write aws-east/config/root`
+	* ƒfƒtƒHƒ‹ƒgF `vault write aws/config/root`
 
 ???
 
@@ -92,7 +92,7 @@ instead of<br>
 name: userpass-0
 # Vault's Userpass Auth Method
 .center[![:scale 30%](images/userpass_login.png)]
-* The Userpass method authenticates users with usernames and passwords managed by Vault.
+* Userpass ƒƒ\ƒbƒh‚ÍAVault ‚ªŠÇ—‚·‚éƒ†[ƒU[–¼‚ÆƒpƒXƒ[ƒh‚Åƒ†[ƒU[‚ğ”FØ‚µ‚Ü‚·B
 
 ???
 * The Userpass method allows users to authenticate with username and password managed by Vault.
@@ -101,7 +101,7 @@ name: userpass-0
 
 ---
 name: lab-vault-basics-challenge-6
-# îçª¶æ˜¨æ±³ã‚µ Lab Challenge 5.1: Userpass Auth Method
+# Lab Challenge 5.1: Userpass Auth Method
 * In this lab, you'll enable and use the Userpass auth method.
 * Instructions:
   * Click the "Use the Userpass Auth Method" challenge of the "Vault Basics" track.
@@ -116,24 +116,26 @@ name: lab-vault-basics-challenge-6
 
 ---
 name: chapter-5-review-questions
-# îçµ± Chapter 5 Review
-* What types of entities can Vault authenticate?
-* What system manages credentials for the Userpass auth method?
-* Can a user that is not assigned any policies other than the default policy access any secrets?
+# Chapter 5 Review
+* Vault ‚Å‚ÍA‚Ç‚Ì‚æ‚¤‚Èí—Ş‚ÌƒGƒ“ƒeƒBƒeƒB‚ğ”FØ‚Å‚«‚Ü‚·‚©H
+* Userpass ”FØ•û–@‚Ì‘Šiî•ñ‚ÍA‚Ç‚Ì‚æ‚¤‚ÈƒVƒXƒeƒ€‚ÅŠÇ—‚³‚ê‚Ä‚¢‚Ü‚·‚©H
+* ƒfƒtƒHƒ‹ƒg‚Ìƒ|ƒŠƒV[ˆÈŠO‚Ìƒ|ƒŠƒV[‚ªŠ„‚è“–‚Ä‚ç‚ê‚Ä‚¢‚È‚¢ƒ†[ƒU[‚ÍAƒV[ƒNƒŒƒbƒg‚ÉƒAƒNƒZƒX‚Å‚«‚Ü‚·‚©H
+
 
 ???
 * Let's review what we learned in this chapter.
 
 ---
 name: chapter-5-review-answers
-# îçµ± Chapter 5 Review
+# Chapter 5 Review
 
-* What types of entities can Vault authenticate?
-  * Users and applications
-* What system manages credentials for the Userpass auth method?
+* Vault ‚ÍA‚Ç‚Ì‚æ‚¤‚Èí—Ş‚ÌƒGƒ“ƒeƒBƒeƒB‚ğ”FØ‚Å‚«‚Ü‚·‚©H
+  * ƒ†[ƒU[‚¨‚æ‚ÑƒAƒvƒŠƒP[ƒVƒ‡ƒ“
+* Userpass auth ƒƒ\ƒbƒh‚Ì”FØî•ñ‚ğŠÇ—‚·‚éƒVƒXƒeƒ€‚Í‰½‚Å‚·‚©?
   * Vault
-* Can a user that is not assigned any policies other than the default policy access any secrets?
-  * No
+* ƒfƒtƒHƒ‹ƒgƒ|ƒŠƒV[ˆÈŠO‚Ìƒ|ƒŠƒV[‚ªŠ„‚è“–‚Ä‚ç‚ê‚Ä‚¢‚È‚¢ƒ†[ƒU[‚ÍAƒV[ƒNƒŒƒbƒg‚ÉƒAƒNƒZƒX‚Å‚«‚Ü‚·‚©?
+  * ‚¢‚¢‚¦
+
 
 ???
 * Here are the answers to the review questions.
