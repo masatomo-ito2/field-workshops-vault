@@ -16,7 +16,7 @@ count: false
 layout: true
 
 .footer[
-- Copyright © 2019 HashiCorp
+- Copyright 息 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
@@ -133,7 +133,7 @@ name: encryption-key-rotation
 
 ---
 name: lab-transit-challenge-1
-# 👩‍💻 Challenge 8.1: Enable the Transit Engine
+# 窶昨汳サ Challenge 8.1: Enable the Transit Engine
 * In this lab challenge, you'll enable the Transit engine.
 * You'll do this in the [Vault Encryption as a Service](https://play.instruqt.com/hashicorp/invite/qleasfx1dszc) Instruqt track.
 * Instructions:
@@ -148,7 +148,7 @@ name: lab-transit-challenge-1
 
 ---
 name: lab-database-challenge-2
-# 👩‍💻 Challenge 8.2: Create an Encryption Key
+# 束窶昨汳サ Challenge 8.2: Create an Encryption Key
 * In this lab, you'll create an encryption key for use with the Transit engine you enabled in the previous challenge.
 * Instructions:
   * Click the "Create a Key for the Transit Secrets Engine" challenge of the "Vault Encryption as a Service" track.
@@ -162,7 +162,7 @@ name: lab-database-challenge-2
 
 ---
 name: lab-database-challenge-3
-# 👩‍💻 Challenge 8.3: Use the Web App Without Vault
+# 束窶昨汳サ Challenge 8.3: Use the Web App Without Vault
 * In this lab, you'll use the web application without Vault.
 * Instructions:
   * Click the "Use the Web App Without Vault" challenge of the "Vault Encryption as a Service" track.
@@ -177,7 +177,7 @@ name: lab-database-challenge-3
 
 ---
 name: lab-database-challenge-4
-# 👩‍💻 Challenge 8.4: Use the Web App With Vault
+# 束窶昨汳サ Challenge 8.4: Use the Web App With Vault
 * In this lab, you'll use the web application with Vault.
 * You'll also rotate the encryption key.
 * Instructions:
@@ -193,7 +193,7 @@ name: lab-database-challenge-4
 
 ---
 name: chapter-8-review-questions
-# 📝 Chapter 8 Review
+# 統 Chapter 8 Review
 * What is the main advantage of using Vault's Transit secrets engine?
 * Where does Vault's Transit Engine store encrypted data?
 * Was the application still able to decrypt older encrypted records after you rotated the encryption key?
@@ -204,7 +204,7 @@ name: chapter-8-review-questions
 
 ---
 name: chapter-8-review-answers
-# 📝 Chapter 8 Review
+# 統 Chapter 8 Review
 * What is the main advantage of using Vault's Transit secrets engine?
   * Developers can encrypt data without being experts in cryptography.
 * Where does Vault's Transit Engine store encrypted data?

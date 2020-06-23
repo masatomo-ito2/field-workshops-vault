@@ -17,7 +17,7 @@ count: false
 layout: true
 
 .footer[
-- Copyright © 2019 HashiCorp
+- Copyright 息 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
@@ -101,7 +101,7 @@ name: userpass-0
 
 ---
 name: lab-vault-basics-challenge-6
-# 👩‍💻 Lab Challenge 5.1: Userpass Auth Method
+# 窶昨汳サ Lab Challenge 5.1: Userpass Auth Method
 * In this lab, you'll enable and use the Userpass auth method.
 * Instructions:
   * Click the "Use the Userpass Auth Method" challenge of the "Vault Basics" track.
@@ -116,7 +116,7 @@ name: lab-vault-basics-challenge-6
 
 ---
 name: chapter-5-review-questions
-# 📝 Chapter 5 Review
+# 統 Chapter 5 Review
 * What types of entities can Vault authenticate?
 * What system manages credentials for the Userpass auth method?
 * Can a user that is not assigned any policies other than the default policy access any secrets?
@@ -126,7 +126,7 @@ name: chapter-5-review-questions
 
 ---
 name: chapter-5-review-answers
-# 📝 Chapter 5 Review
+# 統 Chapter 5 Review
 
 * What types of entities can Vault authenticate?
   * Users and applications

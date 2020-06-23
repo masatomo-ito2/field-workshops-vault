@@ -80,7 +80,7 @@ name: unsealing-vault
 * Describe Vault's `unseal` command.
 ---
 name: lab-vault-basics-challenge-4
-# 👩‍💻 Lab Challenge 3.1: Run a Vault "Prod" Server
+# 窶昨汳サ Lab Challenge 3.1: Run a Vault "Prod" Server
 * In this lab, you'll run your first Vault server in "Prod" mode.
 * You'll learn how to initialize and unseal a Vault server.
 * Instructions:
@@ -109,7 +109,7 @@ Describe the `vault status` command
 
 ---
 name: chapter-3-review-questions
-# 📝 Chapter 3 Review
+# 統 Chapter 3 Review
 
 * What is used to configure a "Prod" mode Vault server?
 * What Vault command needs to be run once against a new Vault cluster?
@@ -120,7 +120,7 @@ name: chapter-3-review-questions
 
 ---
 name: chapter-3-review-answers
-# 📝 Chapter 3 Review
+# 統 Chapter 3 Review
 
 * What is used to configure a "Prod" mode Vault server?
   * A configuration file

@@ -17,7 +17,7 @@ count: false
 layout: true
 
 .footer[
-- Copyright © 2019 HashiCorp
+- Copyright 息 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
@@ -109,7 +109,7 @@ name: vault-kv-commands
 
 ---
 name: lab-vault-basics-challenge-5
-# 👩‍💻 Lab Challenge 4.1: KV v2 Secrets Engine
+# 窶昨汳サ Lab Challenge 4.1: KV v2 Secrets Engine
 * In this lab, you'll enable and use the KV v2 secrets engine.
 * Note that the path will be `kv` instead of `secret`.
 * Instructions:
@@ -125,7 +125,7 @@ name: lab-vault-basics-challenge-5
 
 ---
 name: chapter-4-review-questions
-# 📝 Chapter 4 Review
+# 統 Chapter 4 Review
 
 * What option is added to the `vault secrets enable` command to enable multiple instances?
 * What is the difference between the two versions of the KV secrets engine?
@@ -136,7 +136,7 @@ name: chapter-4-review-questions
 
 ---
 name: chapter-4-review-answers
-# 📝 Chapter 4 Review
+# 統 Chapter 4 Review
 
 * What option is added to the `vault secrets enable` command to enable multiple instances?
   * Add the `-path=<path>` option and use `<path>` with the CLI and API.

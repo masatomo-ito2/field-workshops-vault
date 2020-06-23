@@ -16,9 +16,9 @@ name: hashiCorp-vault-overview
 # HashiCorp Vault Overview
 ![:scale 10%](https://hashicorp.github.io/field-workshops-assets/assets/logos/logo_vault.png)
 
-  * HashiCorp Vault‚ÍAAPIå“±‚ÌƒNƒ‰ƒEƒh•s‰Â’m‚Ì”é–§ŠÇ—ƒVƒXƒeƒ€‚Å‚·B
-  * ƒnƒCƒuƒŠƒbƒhƒNƒ‰ƒEƒhŠÂ‹«‚ÅƒZƒ“ƒVƒeƒBƒu‚Èƒf[ƒ^‚ğˆÀ‘S‚É•Û‘¶EŠÇ—‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
-  * Vault ‚ğg—p‚µ‚ÄA“®“I‚É’Z–½‚ÌƒNƒŒƒfƒ“ƒVƒƒƒ‹‚ğ¶¬‚µ‚½‚èAƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Ìƒf[ƒ^‚ğ‚»‚Ìê‚ÅˆÃ†‰»‚µ‚½‚è‚·‚é‚±‚Æ‚à‚Å‚«‚Ü‚·B
+  * HashiCorp Vaultã¯ã€APIä¸»å°ã®ã‚¯ãƒ©ã‚¦ãƒ‰ä¸å¯çŸ¥ã®ç§˜å¯†ç®¡ç†ã‚·ã‚¹ãƒ†ãƒ ã§ã™ã€‚
+  * ãƒã‚¤ãƒ–ãƒªãƒƒãƒ‰ã‚¯ãƒ©ã‚¦ãƒ‰ç’°å¢ƒã§ã‚»ãƒ³ã‚·ãƒ†ã‚£ãƒ–ãªãƒ‡ãƒ¼ã‚¿ã‚’å®‰å…¨ã«ä¿å­˜ãƒ»ç®¡ç†ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
+  * Vault ã‚’ä½¿ç”¨ã—ã¦ã€å‹•çš„ã«çŸ­å‘½ã®ã‚¯ãƒ¬ãƒ‡ãƒ³ã‚·ãƒ£ãƒ«ã‚’ç”Ÿæˆã—ãŸã‚Šã€ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®ãƒ‡ãƒ¼ã‚¿ã‚’ãã®å ´ã§æš—å·åŒ–ã—ãŸã‚Šã™ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚
 
 ???
 This is meant as a high level overview.  For detailed descriptions or instructions please see the docs, API guide, or learning site:
@@ -31,7 +31,7 @@ name: the-old-way
 layout: false
 # The Traditional Security Model
 .center[![:scale 70%](images/bodiam_castle.jpg)]
-.center[•Ê–¼ué‚Æ–x–@v‚Æ‚àŒÄ‚Î‚ê‚Ä‚¢‚Ü‚·B"Castle and Moat"]
+.center[åˆ¥åã€ŒåŸã¨å €æ³•ã€ã¨ã‚‚å‘¼ã°ã‚Œã¦ã„ã¾ã™ã€‚"Castle and Moat"]
 
 ???
 * This picture shows the traditional castle and moat security model.
@@ -40,16 +40,16 @@ layout: false
 layout: true
 
 .footer[
-- Copyright Â© 2019 HashiCorp
+- Copyright 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
 ---
 name: traditional-security-models
 # The Traditional Security Model
-* ]—ˆ‚ÌƒZƒLƒ…ƒŠƒeƒBƒ‚ƒfƒ‹‚ÍA‹«ŠEü‚ÉŠî‚Ã‚¢‚½ƒZƒLƒ…ƒŠƒeƒB‚Ìl‚¦‚ÉŠî‚Ã‚¢‚Ä\’z‚³‚ê‚Ä‚¢‚Ü‚µ‚½B
-* ƒtƒ@ƒCƒAƒEƒH[ƒ‹‚ª‚ ‚èA‚»‚Ì’†‚Å‚ÍˆÀ‘S‚¾‚Æv‚í‚ê‚Ä‚¢‚Ü‚µ‚½B
-* ƒf[ƒ^ƒx[ƒX‚È‚Ç‚ÌƒŠƒ\[ƒX‚ÍA‚Ù‚Æ‚ñ‚Ç‚ªÃ“I‚È‚à‚Ì‚Å‚µ‚½B ‚»‚Ì‚æ‚¤‚Èƒ‹[ƒ‹‚Í IP ƒAƒhƒŒƒX‚ÉŠî‚Ã‚¢‚Ä‚¨‚èAƒNƒŒƒfƒ“ƒVƒƒƒ‹‚Íƒ\[ƒXƒR[ƒh‚É‘g‚İ‚Ü‚ê‚Ä‚¢‚½‚èAƒfƒBƒXƒNã‚ÌÃ“Iƒtƒ@ƒCƒ‹‚É•Û‘¶‚³‚ê‚Ä‚¢‚Ü‚µ‚½B
+* å¾“æ¥ã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ãƒ¢ãƒ‡ãƒ«ã¯ã€å¢ƒç•Œç·šã«åŸºã¥ã„ãŸã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã®è€ƒãˆã«åŸºã¥ã„ã¦æ§‹ç¯‰ã•ã‚Œã¦ã„ã¾ã—ãŸã€‚
+* ãƒ•ã‚¡ã‚¤ã‚¢ã‚¦ã‚©ãƒ¼ãƒ«ãŒã‚ã‚Šã€ãã®ä¸­ã§ã¯å®‰å…¨ã ã¨æ€ã‚ã‚Œã¦ã„ã¾ã—ãŸã€‚
+* ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ãªã©ã®ãƒªã‚½ãƒ¼ã‚¹ã¯ã€ã»ã¨ã‚“ã©ãŒé™çš„ãªã‚‚ã®ã§ã—ãŸã€‚ ãã®ã‚ˆã†ãªãƒ«ãƒ¼ãƒ«ã¯ IP ã‚¢ãƒ‰ãƒ¬ã‚¹ã«åŸºã¥ã„ã¦ãŠã‚Šã€ã‚¯ãƒ¬ãƒ‡ãƒ³ã‚·ãƒ£ãƒ«ã¯ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã«çµ„ã¿è¾¼ã¾ã‚Œã¦ã„ãŸã‚Šã€ãƒ‡ã‚£ã‚¹ã‚¯ä¸Šã®é™çš„ãƒ•ã‚¡ã‚¤ãƒ«ã«ä¿å­˜ã•ã‚Œã¦ã„ã¾ã—ãŸã€‚
 
 ???
 This slide discusses the traditional security model
@@ -57,11 +57,11 @@ This slide discusses the traditional security model
 ---
 name: problems-with-traditional-security-models
 # Problems with the Traditional Security Model
-* IPƒAƒhƒŒƒXƒx[ƒX‚Ìƒ‹[ƒ‹
-* ‚±‚Ì‚æ‚¤‚È–â‘è‚Ì‚ ‚éƒn[ƒhƒR[ƒh‚³‚ê‚½‘Šiî•ñB
-  * ƒAƒvƒŠ‚Æƒ†[ƒU[‚Ì‹¤—LƒT[ƒrƒXƒAƒJƒEƒ“ƒg
-  * ‰ñ“]‚³‚¹‚½‚èA”p˜F‚É‚µ‚½‚èA’N‚ªƒAƒNƒZƒX‚Å‚«‚é‚©‚ğ”»’f‚·‚é‚Ì‚Í“ï‚µ‚¢B
-  * Šë–w‰»‚µ‚½‘Šiî•ñ‚ğæ‚èÁ‚·‚±‚Æ‚ª‚Å‚«‚é
+* IPã‚¢ãƒ‰ãƒ¬ã‚¹ãƒ™ãƒ¼ã‚¹ã®ãƒ«ãƒ¼ãƒ«
+* ã“ã®ã‚ˆã†ãªå•é¡Œã®ã‚ã‚‹ãƒãƒ¼ãƒ‰ã‚³ãƒ¼ãƒ‰ã•ã‚ŒãŸè³‡æ ¼æƒ…å ±ã€‚
+  * ã‚¢ãƒ—ãƒªã¨ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®å…±æœ‰ã‚µãƒ¼ãƒ“ã‚¹ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ
+  * å›è»¢ã•ã›ãŸã‚Šã€å»ƒç‚‰ã«ã—ãŸã‚Šã€èª°ãŒã‚¢ã‚¯ã‚»ã‚¹ã§ãã‚‹ã‹ã‚’åˆ¤æ–­ã™ã‚‹ã®ã¯é›£ã—ã„ã€‚
+  * å±æ®†åŒ–ã—ãŸè³‡æ ¼æƒ…å ±ã‚’å–ã‚Šæ¶ˆã™ã“ã¨ãŒã§ãã‚‹
 
 ???
 * This slide describes some of the problems with the traditional security model.
@@ -70,7 +70,7 @@ name: the-new-way
 layout: false
 # Modern Secrets Management
 .center[![:scale 65%](images/nomadic_houses.jpg)]
-.center[\•ª‚É’è‹`‚³‚ê‚½‹«ŠEü‚ª‚È‚¢‚½‚ßAƒAƒCƒfƒ“ƒeƒBƒeƒB‚É‚æ‚Á‚ÄƒZƒLƒ…ƒŠƒeƒB‚ª‹­‰»‚³‚ê‚Ä‚¢‚Ü‚·B]
+.center[ååˆ†ã«å®šç¾©ã•ã‚ŒãŸå¢ƒç•Œç·šãŒãªã„ãŸã‚ã€ã‚¢ã‚¤ãƒ‡ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã«ã‚ˆã£ã¦ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ãŒå¼·åŒ–ã•ã‚Œã¦ã„ã¾ã™ã€‚]
 
 ???
 * These are Mongolian Yurts or "Ger" as they are called locally. Instead of a castle with walls and a drawbridge, a fixed fortress that has an inside and an outside, these people move from place to place, bringing their houses with them.
@@ -95,7 +95,7 @@ name: identity-based-security-1
 layout: true
 
 .footer[
-- Copyright Â© 2019 HashiCorp
+- Copyright 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
@@ -103,12 +103,12 @@ layout: true
 name: identity-based-security-2
 # Identity Based Security
 
-Vault‚ÍAŒ»‘ã‚ÌƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌƒZƒLƒ…ƒŠƒeƒBƒj[ƒY‚É‘Îˆ‚·‚é‚½‚ß‚ÉİŒv‚³‚ê‚Ü‚µ‚½B ‚»‚Ìg—p•û‚ÍA]—ˆ‚ÌƒAƒvƒ[ƒ`‚Æ‚ÍˆÙ‚È‚è‚Ü‚·B
+Vaultã¯ã€ç¾ä»£ã®ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ãƒ‹ãƒ¼ã‚ºã«å¯¾å‡¦ã™ã‚‹ãŸã‚ã«è¨­è¨ˆã•ã‚Œã¾ã—ãŸã€‚ ãã®ä½¿ç”¨æ–¹ã¯ã€å¾“æ¥ã®ã‚¢ãƒ—ãƒ­ãƒ¼ãƒã¨ã¯ç•°ãªã‚Šã¾ã™ã€‚
 
-* ƒAƒCƒfƒ“ƒeƒBƒeƒBƒx[ƒX‚Ìƒ‹[ƒ‹‚É‚æ‚èAƒlƒbƒgƒ[ƒN‚Ì‹«ŠE‚ğ‰z‚¦‚ÄƒZƒLƒ…ƒŠƒeƒB‚ğŠg’£‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
-* •p”É‚Éƒ[ƒe[ƒVƒ‡ƒ“‚³‚ê‚éƒ_ƒCƒiƒ~ƒbƒN‚Å’Z–½‚È‘Šiî•ñ
-* •¡”‚ÌƒAƒJƒEƒ“ƒg‚Å‚àƒGƒ“ƒeƒBƒeƒB‚É‚æ‚Á‚Ä’Pˆêƒ†[ƒU[‚Æ‚µ‚Äˆµ‚¦‚é
-* ŠÈ’P‚É–³Œø‰»‚³‚ê‚é‰Â”\«‚Ì‚ ‚é‘Šiî•ñ‚ÆƒGƒ“ƒeƒBƒeƒB
+* ã‚¢ã‚¤ãƒ‡ãƒ³ãƒ†ã‚£ãƒ†ã‚£ãƒ™ãƒ¼ã‚¹ã®ãƒ«ãƒ¼ãƒ«ã«ã‚ˆã‚Šã€ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ã®å¢ƒç•Œã‚’è¶Šãˆã¦ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚’æ‹¡å¼µã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
+* é »ç¹ã«ãƒ­ãƒ¼ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ã•ã‚Œã‚‹ãƒ€ã‚¤ãƒŠãƒŸãƒƒã‚¯ã§çŸ­å‘½ãªè³‡æ ¼æƒ…å ±
+* è¤‡æ•°ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§ã‚‚ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã«ã‚ˆã£ã¦å˜ä¸€ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¨ã—ã¦æ‰±ãˆã‚‹
+* ç°¡å˜ã«ç„¡åŠ¹åŒ–ã•ã‚Œã‚‹å¯èƒ½æ€§ã®ã‚ã‚‹è³‡æ ¼æƒ…å ±ã¨ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£
 
 ???
 * This slide discusses how Vault is designed for modern applications.
@@ -163,13 +163,13 @@ name: vault-reference-architecture-3
 layout: true
 
 .footer[
-- Copyright Â© 2019 HashiCorp
+- Copyright 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
 ---
 name: chapter-1-review-question
-# ğŸ“ Chapter 1 Review
+# Chapter 1 Review
 
 * What is HashiCorp Vault?
 
@@ -177,14 +177,14 @@ name: chapter-1-review-question
 * Let's review what we learned in this chapter.
 ---
 name: chapter-1-review-answer
-# ğŸ“ Chapter 1 Review
+# Chapter 1 Review
 * What is HashiCorp Vault?
- * Vault‚ÍƒV[ƒNƒŒƒbƒgŠÇ—ƒVƒXƒeƒ€‚Å‚·B
-  * API‹ì“®Œ^‚ÅAƒNƒ‰ƒEƒh‚ÉˆË‘¶‚µ‚Ü‚¹‚ñB
-  * M—Š‚³‚ê‚Ä‚¢‚È‚¢ƒlƒbƒgƒ[ƒN‚Åg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
-  * ‘½‚­‚ÌƒVƒXƒeƒ€‚É‘Î‚µ‚Äƒ†[ƒU[‚âƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ”FØ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
-  * ’Z–½‚ÈƒV[ƒNƒŒƒbƒg‚Ì“®“I¶¬‚ğƒTƒ|[ƒg‚µ‚Ü‚·B
-  * ’nˆæ‚ğ‚Ü‚½‚¢‚Å•¡»‰Â”\‚ÈA—˜—p‰Â”\«‚Ì‚‚¢ƒNƒ‰ƒXƒ^‚Å“®ì‚µ‚Ü‚·B
+ * Vaultã¯ã‚·ãƒ¼ã‚¯ãƒ¬ãƒƒãƒˆç®¡ç†ã‚·ã‚¹ãƒ†ãƒ ã§ã™ã€‚
+  * APIé§†å‹•å‹ã§ã€ã‚¯ãƒ©ã‚¦ãƒ‰ã«ä¾å­˜ã—ã¾ã›ã‚“ã€‚
+  * ä¿¡é ¼ã•ã‚Œã¦ã„ãªã„ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ã§ä½¿ç”¨ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
+  * å¤šãã®ã‚·ã‚¹ãƒ†ãƒ ã«å¯¾ã—ã¦ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚„ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’èªè¨¼ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
+  * çŸ­å‘½ãªã‚·ãƒ¼ã‚¯ãƒ¬ãƒƒãƒˆã®å‹•çš„ç”Ÿæˆã‚’ã‚µãƒãƒ¼ãƒˆã—ã¾ã™ã€‚
+  * åœ°åŸŸã‚’ã¾ãŸã„ã§è¤‡è£½å¯èƒ½ãªã€åˆ©ç”¨å¯èƒ½æ€§ã®é«˜ã„ã‚¯ãƒ©ã‚¹ã‚¿ã§å‹•ä½œã—ã¾ã™ã€‚
 
 ???
 * Here are the answers to the review questions.

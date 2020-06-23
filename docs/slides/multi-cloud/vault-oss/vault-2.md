@@ -17,7 +17,7 @@ Chapter 2 focuses on interacting with Vault
 layout: true
 
 .footer[
-- Copyright © 2019 HashiCorp
+- Copyright 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
@@ -25,7 +25,7 @@ layout: true
 name: Interacting-With-Vault
 # Interacting With Vault
 
-Vault provides several mechanisms for interacting with it:
+Vaultとはいくつかの方法でやり取りします。
 * The Vault [CLI](https://www.vaultproject.io/docs/commands/index.html)
 * The Vault [UI](https://learn.hashicorp.com/vault/getting-started/ui)
 * The Vault [API](https://www.vaultproject.io/api-docs/index/)
@@ -37,9 +37,9 @@ Vault provides several mechanisms for interacting with it:
 ---
 name: Vault-CLI
 # The Vault CLI
-* The Vault CLI is a Go application.
-* It runs on macOS, Windows, Linux, and other operating systems.
-* You can download the latest version [here](https://www.vaultproject.io/downloads/).
+* Vault CLIは、Goアプリケーションです。
+* MacOS、Windows、Linux、およびその他のオペレーティングシステムで動作します。
+* 最新バージョンをダウンロードできます。[here](https://www.vaultproject.io/downloads/).
 
 ???
 * The Vault CLI is distributed as a Go binary.
@@ -48,10 +48,11 @@ name: Vault-CLI
 ---
 name: installing-Vault-CLI
 # Installing the Vault CLI
-* Installing Vault on your laptop is easy:
-  * Simply download the zip file.
-  * Unpack the `vault` binary.
-  * Place the binary in your path.
+* あなたのラップトップにVaultをインストールするのは簡単です。
+  * zip ファイルをダウンロードします。
+  * バイナリを解凍します。
+  * バイナリをパスに配置します。
+
 
 See this [tutorial](https://learn.hashicorp.com/vault/getting-started/install) for more details.
 
@@ -61,13 +62,14 @@ Installing Vault is easy.
 ---
 name: some-cli-commands
 # Some Basic Vault CLI Commands
-* `vault` by itself will give you a list of many Vault CLI commands.
-  * The list starts with the most common ones.
-* `vault version` tells you the version of Vault you are running.
-* `vault read` is used to read secrets from Vault.
-* `vault write` is used to write secrets to Vault.
+* `vault`は、それ自体で多くのVault CLIコマンドのリストを提供します。
+  * リストは、最も一般的なサブコマンドになります。
+* `vault version` は、実行している Vault のバージョンを教えてくれます。
+* `vault read` は、Vaultからシークレットを読み取るために使用します。
+* vault にシークレットを書き込むには `vault write` を使用します。
 
-The `-h`, `-help`, and `--help` flags can be added to get help for any Vault CLI command.
+`h`, `help`, `--help` フラグは、Vault CLI コマンドのヘルプを取得するために追加することができます。
+
 
 ???
 Let's discuss some of the basic Vault CLI commands.
@@ -85,7 +87,7 @@ name: getting-started-with-instruqt
 * Don't worry if you've never used it before: there is an easy tutorial that you can run through in 5-10 minutes.
 ---
 name: lab-vault-basics-challenge-1
-# 👩‍💻 Lab Challenge 2.1: The Vault CLI
+# Lab Challenge 2.1: The Vault CLI
 * In this lab, you'll run some of the Vault CLI commands.
 * You'll do this in the first challenge, "The Vault CLI", of the [Vault Basics](https://play.instruqt.com/hashicorp/invite/qfwncq62zsxu) Instruqt track.
 * You'll continue to work through this Instruqt track in chapters 2-6.
@@ -96,7 +98,7 @@ name: lab-vault-basics-challenge-1
 
 ---
 name:lab-vault-basics-challenge-1-instructions
-# 👩‍💻 Lab Challenge 2.1: Instructions
+# Lab Challenge 2.1: Instructions
 * Start the "Vault Basics" track by clicking the purple "Start" button on the "Vault CLI" challenge of the track.
 * While the challenge is loading, read the displayed text.
 * Click the green "Start" button to start the "Vault CLI" challenge.
@@ -112,9 +114,9 @@ name:lab-vault-basics-challenge-1-instructions
 ---
 name: vault-server-modes
 # Vault Server Modes
-Vault servers can be run in two different modes:
-* "Dev" mode that is only intended for development
-* "Prod" mode that can be used in QA and production
+Vault サーバは、2 つの異なるモードで動作させることができます。
+* 開発のみを目的とした"Dev"モード
+* QAや本番環境で使用できる "Prod "モード
 
 ???
 * Discuss Vault's two server modes
@@ -122,10 +124,12 @@ Vault servers can be run in two different modes:
 ---
 name: vault-dev-server
 # Vault's "Dev" Mode
-* It is not secure.
-* It stores everything in memory.
-* Vault is automatically unsealed.
-* The root token can be specified before launching.
+* 安全ではありません。
+* メモリにすべてを保存します。
+* Vaultは自動的にSealが解除されます。
+* 起動前にルートトークンを指定することができます。
+
+
 
 **Please never store actual secrets on a server run in "Dev" mode.**
 
@@ -135,7 +139,7 @@ name: vault-dev-server
 
 ---
 name: lab-vault-basics-challenge-2
-# 👩‍💻 Lab Challenge 2.2: Run a Vault "Dev" Server
+# 束窶昨汳サ Lab Challenge 2.2: Run a Vault "Dev" Server
 * In this lab, you'll run your first Vault server in "Dev" mode.
 * You'll also write your first secret to Vault and use the UI.
 * Instructions:
@@ -151,10 +155,11 @@ name: lab-vault-basics-challenge-2
 ---
 name: Vault-UI
 # The Vault UI
-* In order to use the Vault UI, you must sign in.
-* Vault supports multiple authentication methods.
-* A new Vault server will only have the Token auth method enabled.
-* In the challenge you just completed, you used the Token auth method and specified "root" as the token.
+* Vault UI を使用するには、サインインする必要があります。
+* Vault は複数の認証方法をサポートしています。
+* インストールしたてのVault サーバーでは、Token auth メソッドのみが有効になります。
+* 先ほど完了したチャレンジでは、Token auth メソッドを使用し、トークンとして「root」を指定しました。
+
 
 ???
 
@@ -228,7 +233,7 @@ name: vault-api-3
 
 ---
 name: lab-vault-basics-challenge-3
-# 👩‍💻 Lab Challenge 2.3: Use the Vault HTTP API
+# 束窶昨汳サ Lab Challenge 2.3: Use the Vault HTTP API
 * In this lab, you'll use the Vault HTTP API.
 * You'll first check the health of your Vault server.
 * You'll then read your `my-first-secret` secret from Vault.
@@ -243,7 +248,7 @@ name: lab-vault-basics-challenge-3
 
 ---
 name: chapter-2-review-questions
-# 📝 Chapter 2 Review
+# 統 Chapter 2 Review
 
 * How can you interact with Vault?
 * What options can you use to get help for Vault commands?
@@ -254,7 +259,7 @@ name: chapter-2-review-questions
 
 ---
 name: chapter-2-review-answers
-# 📝 Chapter 2 Review
+# 統 Chapter 2 Review
 * How can you interact with Vault?
   * The Vault CLI
   * The Vault UI

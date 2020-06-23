@@ -5,7 +5,7 @@ count: false
 
 # Vault OSS Workshop
 ## Modern Security with Vault for any Cloud
-## �S�ẴN���E�h�֌��������_���Z�L�����e�B
+## 全てのクラウドへ向けたモダンセキュリティ
 
 ![:scale 15%](https://hashicorp.github.io/field-workshops-assets/assets/logos/logo_vault.png)
 
@@ -18,7 +18,7 @@ It is cloud agnostic.
 layout: true
 
 .footer[
-- Copyright © 2019 HashiCorp
+- Copyright ツゥ 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
@@ -67,9 +67,9 @@ The table of contents for the workshop
 ---
 name: instruqt-tracks
 # Lab Environment Used
-* ���̃��[�N�V���b�v�ł�[Instruqt](https://instruqt.com)�Ńn���Y�I����Ƃ����Ă��������܂��B
-* Instruqt�ł͂������̃g���b�N�Ń`�������W�����Ȃ��Ă����������܂��B
-* ���̃��[�N�V���b�v�ł͈ȉ��̃g���b�N���g�p���܂��B
+* このワークショップでは[Instruqt](https://instruqt.com)でハンズオン作業をしていただきます。
+* Instruqtではいくつかのトラックでチャレンジをこなしていっただきます。
+* このワークショップでは以下のトラックを使用します。
     1. [Vault Basics](https://play.instruqt.com/hashicorp/invite/qfwncq62zsxu)
     1. [Vault Dynamic Database Credentials](https://play.instruqt.com/hashicorp/invite/sryhqfdm6sgx)
     1. [Vault Encryption as a Service](https://play.instruqt.com/hashicorp/invite/qleasfx1dszc)

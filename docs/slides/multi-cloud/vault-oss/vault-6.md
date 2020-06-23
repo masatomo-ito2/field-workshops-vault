@@ -16,7 +16,7 @@ count: false
 layout: true
 
 .footer[
-- Copyright © 2019 HashiCorp
+- Copyright 息 2019 HashiCorp
 - ![:scale 100%](https://hashicorp.github.io/field-workshops-assets/assets/logos/HashiCorp_Icon_Black.svg)
 ]
 
@@ -88,7 +88,7 @@ Describe the most important Vault CLI commands for policies.
 
 ---
 name: lab-vault-basics-challenge-7
-# 👩‍💻 Lab Challenge 6.1: Vault Policies
+# 窶昨汳サ Lab Challenge 6.1: Vault Policies
 * In this lab, you'll use Vault policies to grant different users access to different secrets.
 * Instructions:
   * Click the "Use Vault Policies" challenge of the "Vault Basics" track.
@@ -103,7 +103,7 @@ name: lab-vault-basics-challenge-7
 
 ---
 name: chapter-6-review-questions
-# 📝 Chapter 6 Review
+# 統 Chapter 6 Review
 * Does Vault grant access to secrets by default?
 * What are the policy capabilities that correspond to HTTP verbs?
 * What CLI command can be used to add a policy to Vault?
@@ -113,7 +113,7 @@ name: chapter-6-review-questions
 
 ---
 name: chapter-6-review-answers
-# 📝 Chapter 6 Review
+# 統 Chapter 6 Review
 
 * Does Vault grant access to secrets by default?
   * No
