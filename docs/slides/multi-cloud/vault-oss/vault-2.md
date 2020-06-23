@@ -48,7 +48,7 @@ name: Vault-CLI
 ---
 name: installing-Vault-CLI
 # Installing the Vault CLI
-* あなたのラップトップにVaultをインストールするのは簡単です。
+* Vaultをインストールするのは簡単です。
   * zip ファイルをダウンロードします。
   * バイナリを解凍します。
   * バイナリをパスに配置します。
@@ -139,7 +139,7 @@ name: vault-dev-server
 
 ---
 name: lab-vault-basics-challenge-2
-# 束窶昨汳サ Lab Challenge 2.2: Run a Vault "Dev" Server
+# Lab Challenge 2.2: Run a Vault "Dev" Server
 * In this lab, you'll run your first Vault server in "Dev" mode.
 * You'll also write your first secret to Vault and use the UI.
 * Instructions:
@@ -188,8 +188,8 @@ name: welcome-to-vault
 name: vault-api-1
 # The Vault API
 
-* Vault has an HTTP API that you can use to configure Vault and manage your secrets.
-* You can check Vault's health with a simple `curl` command followed by `jq` to format the JSON output.
+* Vault には HTTP API があり、Vault の設定や秘密の管理に使用できます。
+* Vault の健全性をチェックするには、単純な `curl` コマンドと `jq` コマンドを実行し、JSON 出力をフォーマットします。
 
 Command:
 ```bash
@@ -223,17 +223,16 @@ Here is the output from Vault's sys/health endpoint
 ---
 name: vault-api-3
 # Authenticating Against the Vault API
-
-* The sys/health endpoint didn't require any authentication.
-* But most Vault API calls do require authentication.
-* This is done with a Vault token that is provided with the `X-Vault-Token` header.
+* sys/health エンドポイントは認証を必要としません。
+* ただしほとんどの Vault API 呼び出しは認証を必要とします。
+* 認証は`X-Vault-Token` ヘッダーで提供される Vault トークンで行われます。
 
 ???
 * Talk about how most Vault HTTP API calls will require authentication with a Vault token.
 
 ---
 name: lab-vault-basics-challenge-3
-# 束窶昨汳サ Lab Challenge 2.3: Use the Vault HTTP API
+# Lab Challenge 2.3: Use the Vault HTTP API
 * In this lab, you'll use the Vault HTTP API.
 * You'll first check the health of your Vault server.
 * You'll then read your `my-first-secret` secret from Vault.
@@ -248,7 +247,7 @@ name: lab-vault-basics-challenge-3
 
 ---
 name: chapter-2-review-questions
-# 統 Chapter 2 Review
+# Chapter 2 Review
 
 * How can you interact with Vault?
 * What options can you use to get help for Vault commands?
@@ -259,7 +258,7 @@ name: chapter-2-review-questions
 
 ---
 name: chapter-2-review-answers
-# 統 Chapter 2 Review
+# Chapter 2 Review
 * How can you interact with Vault?
   * The Vault CLI
   * The Vault UI
