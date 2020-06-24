@@ -52,7 +52,7 @@ name: configuring-vault
 name: running-vault
 # Starting a Production Vault Server
 * Vault Productionサーバを起動するには、`vault server`コマンドを使用します。
-* `-dev` オプションは使用しません。
+* **注意** `-dev` オプションは使用しません。
 
 ???
 * Describe the command to run a Vault production server.

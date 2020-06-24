@@ -4,8 +4,7 @@ background-image: url(https://hashicorp.github.io/field-workshops-assets/assets/
 count: false
 
 # Vault OSS Workshop
-## Modern Security with Vault for any Cloud
-### 全てのクラウドへ向けたモダンセキュリティ
+## 全てのクラウドへ向けたモダンセキュリティ
 
 ![:scale 15%](https://hashicorp.github.io/field-workshops-assets/assets/logos/logo_vault.png)
 
@@ -70,7 +69,7 @@ The table of contents for the workshop
 name: instruqt-tracks
 # Lab Environment Used
 * このワークショップでは[Instruqt](https://instruqt.com)でハンズオン作業をしていただきます。
-* Instruqtではいくつかのトラックでチャレンジをこなしていっただきます。
+* Instruqtではいくつかのトラックでチャレンジをこなしていただきます。
 * このワークショップでは以下のトラックを使用します。
     1. [Vault Basics](https://play.instruqt.com/hashicorp/invite/qfwncq62zsxu)
     1. [Vault Dynamic Database Credentials](https://play.instruqt.com/hashicorp/invite/sryhqfdm6sgx)

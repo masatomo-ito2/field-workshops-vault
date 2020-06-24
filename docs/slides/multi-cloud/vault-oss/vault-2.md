@@ -25,7 +25,7 @@ layout: true
 name: Interacting-With-Vault
 # Interacting With Vault
 
-Vaultとはいくつかの方法でやり取りします。
+Vaultとのやり取りはいくつかの方法があります。
 * The Vault [CLI](https://www.vaultproject.io/docs/commands/index.html)
 * The Vault [UI](https://learn.hashicorp.com/vault/getting-started/ui)
 * The Vault [API](https://www.vaultproject.io/api-docs/index/)
@@ -114,8 +114,8 @@ name:lab-vault-basics-challenge-1-instructions
 ---
 name: vault-server-modes
 # Vault Server Modes
-Vault サーバは、2 つの異なるモードで動作させることができます。
-* 開発のみを目的とした"Dev"モード
+Vault サーバは、2 つのモードで動作させることができます。
+* 開発や機能テストのみを目的とした"Dev"モード
 * QAや本番環境で使用できる "Prod "モード
 
 ???
@@ -126,8 +126,11 @@ name: vault-dev-server
 # Vault's "Dev" Mode
 * 安全ではありません。
 * メモリにすべてを保存します。
-* Vaultは自動的にSealが解除されます。
+	** Vaultサーバーを落とすと全てのデータは消滅します。
+* VaultはSealが解除された状態で起動します。
+	** Unsealの手間が入りません。
 * 起動前にルートトークンを指定することができます。
+	** `root` など簡単なトークンIDを指定します。
 
 
 
@@ -155,9 +158,9 @@ name: lab-vault-basics-challenge-2
 ---
 name: Vault-UI
 # The Vault UI
-* Vault UI を使用するには、サインインする必要があります。
+* Vault UI を使用するには、まずログインします。
 * Vault は複数の認証方法をサポートしています。
-* インストールしたてのVault サーバーでは、Token auth メソッドのみが有効になります。
+* インストールした直後のVault サーバーはToken auth メソッドのみが有効です。	
 * 先ほど完了したチャレンジでは、Token auth メソッドを使用し、トークンとして「root」を指定しました。
 
 
@@ -188,7 +191,8 @@ name: welcome-to-vault
 name: vault-api-1
 # The Vault API
 
-* Vault には HTTP API があり、Vault の設定や秘密の管理に使用できます。
+* Vaultの全てのオペレーションはHTTP APIで可能です。
+	** Vault の設定や秘密の管理もAPIで行います。
 * Vault の健全性をチェックするには、単純な `curl` コマンドと `jq` コマンドを実行し、JSON 出力をフォーマットします。
 
 Command:
@@ -223,8 +227,8 @@ Here is the output from Vault's sys/health endpoint
 ---
 name: vault-api-3
 # Authenticating Against the Vault API
-* sys/health エンドポイントは認証を必要としません。
-* ただしほとんどの Vault API 呼び出しは認証を必要とします。
+* sys/health エンドポイントは認証は必要ありません。
+* ただし、ほとんどの Vault API 呼び出しは認証を必要とします。
 * 認証は`X-Vault-Token` ヘッダーで提供される Vault トークンで行われます。
 
 ???
