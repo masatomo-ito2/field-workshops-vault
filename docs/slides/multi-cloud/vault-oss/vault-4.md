@@ -83,7 +83,7 @@ name: vault-kv-engine
   * KV v1 (バージョニングなし)
   * KV v2 (バージョニング付き)
 * Vault は、「Prod」モードのサーバでは、KV シークレットエンジンのインスタンスを有効にしません。
-* よって、自分で有効にする必要があります。
+* 自分で有効にする必要があります。
 
 ???
 * We already used Vault's Key/Value (KV) engine in the second challenge of the "Vault Basics" Instruqt track that had been automatically enabled for the "Dev" mode server.
@@ -94,12 +94,14 @@ name: vault-kv-commands
 # KV Secrets Engine Commands
 * 以下のコマンドを使用して、KV v2 secrets engineのインスタンスをデフォルトパス `kv`にマウントします。
 	* `vault secrets enable -version=2 kv` のようにしてください。
-* vult kv` コマンドでKV seacret engineを操作することができます。
+* `vult kv` コマンドでKV seacret engineを操作することができます。
   * `vault kv list` は指定されたパスのシークレットをリストアップします。
   * `vault kv put` は指定したパスにシークレットを書き込みます。
   * `vault kv get` は指定したパスにあるシークレットを読み込みます。
   * `vault kv delete` は指定されたパスにあるシークレットを削除します。
 
+???
+* サンプル
 
 ---
 name: lab-vault-basics-challenge-5
