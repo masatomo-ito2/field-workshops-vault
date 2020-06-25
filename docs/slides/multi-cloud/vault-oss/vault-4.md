@@ -92,7 +92,7 @@ name: vault-kv-engine
 ---
 name: vault-kv-commands
 # KV Secrets Engine Commands
-* このコマンドを使用して、KV v2 secrets engineのインスタンスをデフォルトパス `kv`にマウントします。
+* 以下のコマンドを使用して、KV v2 secrets engineのインスタンスをデフォルトパス `kv`にマウントします。
 	* `vault secrets enable -version=2 kv` のようにしてください。
 * vult kv` コマンドでKV seacret engineを操作することができます。
   * `vault kv list` は指定されたパスのシークレットをリストアップします。
@@ -100,9 +100,6 @@ name: vault-kv-commands
   * `vault kv get` は指定したパスにあるシークレットを読み込みます。
   * `vault kv delete` は指定されたパスにあるシークレットを削除します。
 
-???
-* Describe how to mount an instance of the KV v2 secrets engine.
-* Describe the various `vault kv` subcommands.
 
 ---
 name: lab-vault-basics-challenge-5
