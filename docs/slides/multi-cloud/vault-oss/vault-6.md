@@ -83,9 +83,9 @@ name: vault-policy-commands
 * Vault のポリシーは、Vault の CLI、UI、または API を使用して、Vault サーバに追加できます。
 * CLIでポリシーを追加するコマンドは、`vault policy write`です。
 * 以下は、HCLファイル "lob-A-dept-1-policy.hcl"から "lob-A-dept-1 "というポリシーを作成するコマンドです。
-`vault policy write lob-A-dept-1 lob-A-dept-1-policy.hcl` です。
+	* `vault policy write lob-A-dept-1 lob-A-dept-1-policy.hcl`
 * このポリシーをUserpassユーザーに関連付けるコマンドは以下の通りです。
-`vault write auth/userpass/users/joe/policies policies=lob-A-dept-1`` です。
+	* `vault write auth/userpass/users/joe/policies policies=lob-A-dept-1` です。
 
 ???
 Describe the most important Vault CLI commands for policies.
