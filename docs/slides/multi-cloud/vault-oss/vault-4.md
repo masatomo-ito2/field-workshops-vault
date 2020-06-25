@@ -101,7 +101,6 @@ name: vault-kv-commands
   * `vault kv delete` は指定されたパスにあるシークレットを削除します。
 
 ???
-
 * Describe how to mount an instance of the KV v2 secrets engine.
 * Describe the various `vault kv` subcommands.
 
