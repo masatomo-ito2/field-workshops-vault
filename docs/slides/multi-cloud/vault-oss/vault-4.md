@@ -84,8 +84,17 @@ name: vault-kv-engine
   * KV v2 (バージョニング付き)
 * Vault は、「Prod」モードのサーバでは、KV シークレットエンジンのインスタンスを有効にしません。
 * 自分で有効にする必要があります。
+
+???
 * We already used Vault's Key/Value (KV) engine in the second challenge of the "Vault Basics" Instruqt track that had been automatically enabled for the "Dev" mode server.
 * But we'll need to mount it ourselves for the "Prod" mode server.
+
+---
+name: masa-test
+* てすと
+
+???
+* てすと
 
 ---
 name: vault-kv-commands
