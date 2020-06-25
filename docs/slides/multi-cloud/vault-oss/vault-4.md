@@ -94,7 +94,7 @@ name: vault-kv-commands
 # KV Secrets Engine Commands
 * 以下のコマンドを使用して、KV v2 secrets engineのインスタンスをデフォルトパス `kv`にマウントします。
 	* `vault secrets enable -version=2 kv` のようにしてください。
-* `vult kv` コマンドでKV seacret engineを操作することができます。
+* `vault kv` コマンドでKV seacret engineを操作することができます。
   * `vault kv list` は指定されたパスのシークレットをリストアップします。
   * `vault kv put` は指定したパスにシークレットを書き込みます。
   * `vault kv get` は指定したパスにあるシークレットを読み込みます。
