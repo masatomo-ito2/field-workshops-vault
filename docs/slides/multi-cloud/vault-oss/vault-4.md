@@ -99,7 +99,6 @@ name: vault-kv-commands
   * `vault kv put` は指定したパスにシークレットを書き込みます。
   * `vault kv get` は指定したパスにあるシークレットを読み込みます。
   * `vault kv delete` は指定されたパスにあるシークレットを削除します。
-* 他の `vault kv` サブコマンドは KV v2 のSecret engineのバージョンで動作します。
 
 ???
 

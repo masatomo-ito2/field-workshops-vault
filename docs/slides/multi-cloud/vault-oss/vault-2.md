@@ -62,8 +62,7 @@ Installing Vault is easy.
 ---
 name: some-cli-commands
 # Some Basic Vault CLI Commands
-* `vault`は、それ自体で多くのVault CLIコマンドのリストを提供します。
-  * リストは、最も一般的なサブコマンドになります。
+* `vault`は、多くのVault CLIサブコマンドがあります。
 * `vault version` は、実行している Vault のバージョンを教えてくれます。
 * `vault read` は、Vaultからシークレットを読み取るために使用します。
 * vault にシークレットを書き込むには `vault write` を使用します。
@@ -126,11 +125,11 @@ name: vault-dev-server
 # Vault's "Dev" Mode
 * 安全ではありません。
 * メモリにすべてを保存します。
-	** Vaultサーバーを落とすと全てのデータは消滅します。
+	* Vaultサーバーを落とすと全てのデータは消滅します。
 * VaultはSealが解除された状態で起動します。
-	** Unsealの手間が入りません。
+	* Unsealの手間が入りません。
 * 起動前にルートトークンを指定することができます。
-	** `root` など簡単なトークンIDを指定します。
+	* `root` など簡単なトークンIDを指定します。
 
 
 
@@ -192,7 +191,7 @@ name: vault-api-1
 # The Vault API
 
 * Vaultの全てのオペレーションはHTTP APIで可能です。
-	** Vault の設定や秘密の管理もAPIで行います。
+	* Vault の設定や秘密の管理もAPIで行います。
 * Vault の健全性をチェックするには、単純な `curl` コマンドと `jq` コマンドを実行し、JSON 出力をフォーマットします。
 
 Command:

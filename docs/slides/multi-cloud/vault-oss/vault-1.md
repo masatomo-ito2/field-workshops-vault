@@ -16,7 +16,7 @@ name: hashiCorp-vault-overview
 # HashiCorp Vault Overview
 ![:scale 10%](https://hashicorp.github.io/field-workshops-assets/assets/logos/logo_vault.png)
 
-  * HashiCorp Vaultは、API主導のクラウド不可知の秘密管理システムです。
+  * HashiCorp Vaultは、API主導のクラウドに依存しない秘密管理システムです。
   * ハイブリッドクラウド環境でセンシティブなデータを安全に保存・管理することができます。
   * Vault を使用して、動的に短命のクレデンシャルを生成したり、アプリケーションのデータをその場で暗号化したりすることもできます。
 
@@ -58,10 +58,10 @@ This slide discusses the traditional security model
 name: problems-with-traditional-security-models
 # Problems with the Traditional Security Model
 * IPアドレスベースのルール
-* このような問題のあるハードコードされた資格情報。
+* 以下のような問題のあるハードコードされた資格情報。
   * アプリとユーザーの共有サービスアカウント
   * Rotationさせたり、破棄したり、誰がアクセスできるかを判断するのは難しい。
-  * 危険なクレデンシャルを取り消すことができる
+  * 危険なクレデンシャルを破棄する影響が大きい
 
 ???
 * This slide describes some of the problems with the traditional security model.
